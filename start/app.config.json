@@ -1,0 +1,32 @@
+{
+  "app":        {
+    "title":                "my.App",
+    "useContentController": true,
+    "defaultContentId":     "index"
+  },
+  "template":   {
+    "maxContainerWidth": 700,
+    "footer":            {
+      "title":    "Works with ely.Flat Application Engine",
+      "subtitle": "My application"
+    }
+  },
+  "sidenavigation": {
+    "enabled": false,
+    "allowMouseEvents": true,
+    "items": [
+      {
+        "text": "Home"
+      }
+    ]
+  },
+  "navigation": {
+    "title": "my.App{ }",
+    "items": [
+      {
+        "text":   "Home",
+        "action": "#content(index)"
+      }
+    ]
+  }
+}

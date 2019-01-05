@@ -1,0 +1,19 @@
+{
+  "name": "ely.flat.builder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node index.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "boxen": "latest",
+    "figlet": "latest",
+    "filewatcher": "^3.0.1",
+    "prompt": "latest",
+    "rollup": "^0.67.4",
+    "express": "latest"
+  }
+}
