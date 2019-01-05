@@ -1,13 +1,25 @@
 {
   "name": "efi",
   "version": "1.0.0",
-  "description": "",
+  "description": "The ely.flat installer and builder.",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/DiegoLing33/efi#readme",
+  "keywords": ["ely.flat"],
   "main": "index.js",
   "scripts": {
     "start": "ts-node index.ts"
   },
-  "author": "",
-  "license": "ISC",
+  "author": {
+    "name": "Diego Ling",
+    "email": "diegoling33@gmail.com"
+  },
+  "bin": {
+    "efi": "./index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DiegoLing33/efi.git"
+  },
   "dependencies": {
     "boxen": "latest",
     "figlet": "latest",
