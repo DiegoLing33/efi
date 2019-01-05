@@ -14,7 +14,7 @@
     "email": "diegoling33@gmail.com"
   },
   "bin": {
-    "efi": "./index.ts"
+    "efi": "./cli.js"
   },
   "repository": {
     "type": "git",
