@@ -15,6 +15,7 @@
     "name": "Diego Ling",
     "email": "diegoling33@gmail.com"
   },
+  "files": ["ely.flat.js"],
   "bin": {
     "efi": "./index.js"
   },
