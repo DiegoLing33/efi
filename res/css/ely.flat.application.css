@@ -7020,6 +7020,24 @@ a:hover {
 /**
    * Размеры текста
    */
+.ef-field {
+  display: table;
+  width: 100%;
+  background-color: white;
+  border: 1px solid transparent;
+  transition: border 0.2s;
+  position: relative;
+  -webkit-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.12), 0 2px 2px 0 rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.12), 0 2px 2px 0 rgba(0, 0, 0, 0.24);
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.12), 0 2px 2px 0 rgba(0, 0, 0, 0.24);
+  transition: box-shadow 0.45s ease-in-out;
+  transition: -webkit-box-shadow 0.45s ease-in-out;
+  transition: -moz-box-shadow 0.45s ease-in-out;
+}
+.ef-field.error {
+  border: 1px solid rgba(232, 0, 0, 0.86);
+}
+
 /** Группа элементов на контроллере ввода */
 .ef-input-group {
   display: table;
@@ -7077,7 +7095,7 @@ a:hover {
   text-align: left;
   color: rgba(0, 0, 0, 0.32);
   font-size: 12px;
-  margin-top: -12px;
+  margin-top: 2px;
   cursor: default;
   box-shadow: none !important;
 }
@@ -7093,12 +7111,6 @@ a:hover {
   background-clip: padding-box;
   border: none;
   border-radius: 0;
-  -webkit-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.12), 0 2px 2px 0 rgba(0, 0, 0, 0.24);
-  -moz-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.12), 0 2px 2px 0 rgba(0, 0, 0, 0.24);
-  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.12), 0 2px 2px 0 rgba(0, 0, 0, 0.24);
-  transition: box-shadow 0.45s ease-in-out;
-  transition: -webkit-box-shadow 0.45s ease-in-out;
-  transition: -moz-box-shadow 0.45s ease-in-out;
 }
 .ef-input.static {
   -webkit-box-shadow: none;
@@ -7358,11 +7370,7 @@ a:hover {
   box-shadow: none;
   background: transparent;
 }
-.ef-input-switch .ef-input-group {
-  box-shadow: none;
-  background: transparent;
-}
-.ef-input-switch .ef-input-group .title {
+.ef-input-switch .title {
   display: inline-block;
   top: -7px;
   position: relative;
@@ -7457,6 +7465,9 @@ a:hover {
   position: absolute;
   z-index: 99100;
   background-color: #fafafa;
+  left: -2px;
+  top: 100%;
+  right: -2px;
 }
 
 .ef-tips-view ul {
