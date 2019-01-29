@@ -1,18 +1,29 @@
 {
-  "app":        {
-    "title":                "my.App",
-    "useContentController": true,
-    "defaultContentId":     "index"
+  "app": {
+    "title": "ely.Flat.Application",
+    "author": null
   },
-  "template":   {
+  "manifest": {
+    "useMeta": true,
+    "useApplicationIcon": true,
+    "useViewPort": true,
+    "useNavigationBar": true,
+    "useSideNavigationBar": true,
+    "useContentController": true,
+    "useContentRouter": true
+  },
+  "contentController": {
+    "defaultContentId": "index",
+    "errorContentId": "error"
+  },
+  "template": {
     "maxContainerWidth": 700,
-    "footer":            {
-      "title":    "Works with ely.Flat Application Engine",
+    "footer": {
+      "title": "Works with ely.Flat Application Engine",
       "subtitle": "My application"
     }
   },
-  "sidenavigation": {
-    "enabled": false,
+  "sideNavigationBar": {
     "allowMouseEvents": true,
     "items": [
       {
@@ -20,13 +31,32 @@
       }
     ]
   },
-  "navigation": {
-    "title": "my.App{ }",
+  "navigationBar": {
+    "title": "ely.App{ }",
+    "subtitle": null,
+    "extendedStyle": false,
+    "color": "#141414",
     "items": [
       {
-        "text":   "Home",
+        "text": "Home",
+        "iconName": "home",
         "action": "#content(index)"
       }
     ]
+  },
+  "meta": {
+    "charset": "UTF-8",
+    "iconPath": "resources/icon",
+    "appleMobile": {
+      "statusBarStyle": "black-translucent",
+      "appCapable": true
+    },
+    "viewport": {
+      "fit": "cover",
+      "userScale": "no",
+      "initialScale": 1.0,
+      "maximumScale": 1.0,
+      "width": "device-width"
+    }
   }
 }
