@@ -53,10 +53,10 @@
     },
     "viewport": {
       "fit": "cover",
+      "width": "device-width",
       "userScale": "no",
       "initialScale": 1.0,
-      "maximumScale": 1.0,
-      "width": "device-width"
+      "maximumScale": 1.0
     }
   }
 }
