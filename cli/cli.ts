@@ -66,6 +66,10 @@ export function cli(logger, args) {
             break;
         case "--help":
         case "-h":
+        case "--version":
+        case "-v":
+            logger.log("Текущая версия: 1.0.5");
+            break;
         default:
             __help();
             break;
