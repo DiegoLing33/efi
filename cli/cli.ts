@@ -21,6 +21,7 @@ function __help() {
     console.log("\t-l --live\tЗапускает систему ely.flat.builder watcher");
     console.log("\t-s --server\tЗапуск автономного сервера с режимом live update");
     console.log("\t-h --help\tСправка cli");
+    console.log("\t-v --version\tВерсия ely flat installer");
     console.log();
     console.log();
 }
@@ -64,12 +65,12 @@ export function cli(logger, args) {
         case "-s":
             startServer(logger);
             break;
-        case "--help":
-        case "-h":
         case "--version":
         case "-v":
             logger.log("Текущая версия: 1.0.5");
             break;
+        case "--help":
+        case "-h":
         default:
             __help();
             break;

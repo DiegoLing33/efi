@@ -8471,9 +8471,13 @@ class elyFlatApplication extends elyObservable {
                 type: "image/png",
             });
             this.applicationDocument.head.addLink({
+                href: config.meta.iconPath + "/favicon.ico",
+                rel: "shortcut icon",
+            });
+            this.applicationDocument.head.addLink({
                 color: config.getNavigationBarColorString(),
                 href: config.meta.iconPath + "/safari-pinned-tab.svg",
-                rel: "mask icon",
+                rel: "mask-icon",
             });
         }
     }
